@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let data;
 
 app.get("/", (req, res) => {
-  res.render("index.html", { recipe: data });
+  res.render("index.ejs", { recipe: data });
 });
 
 app.post("/recipe", (req, res) => {
